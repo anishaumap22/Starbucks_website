@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strabucks website</title>
+    <style>
+        .header{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(110, 0, 90, 0.9),rgba(159, 197, 166, 0.9)),
+            url(starbucks-922862_640.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        nav{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 6%;
+            transition: all 1s ease;
+        }
+        nav .logo{
+            display: flex;
+            align-items: center;
+        }
+        nav .logo img{
+            width: 60px;
+        }
+        nav ul li{
+            display: inline-block;
+            list-style: none;
+            font-size: 15px;
+            margin: 19px;
+            font-family: 'poppins',sans-serif;
+        }
+        nav ul li a{
+            display: block;
+            left: 0;
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            align-items: center;
+            font-weight: 600;
+        }
+        nav:hover{
+            background-color: #fff;
+        }
+        nav:hover ul li a{
+            color: #00754A;
+            text-shadow: 1px 0px 7px #00754A;
+        }
+        .links{
+            display: flex;
+            align-items: center;
+            margin: auto;
+        }
+        .links a{
+            text-decoration: none;
+            color: #fff;
+            margin: 15px;
+            font-size: 17px;
+            border: 1.5px solid #fff;
+            border-radius: 30px;
+            padding: 6px 18px;
+            background-color: transparent;
+        }
+        nav:hover .links a{
+            border: 1.5px solid #000;
+            background-color: #fff;
+            color: #000;
+        }
+        .content{
+            display: flex;
+            position: absolute;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2%;
+            margin-left: 3%;
+            /* background-color: red;
+            width: 90%;
+            height: 300px; */
+        }
+        .content img{
+            display: block;
+            width: 490px;
+            cursor: pointer;
+            animation: updown 1s linear infinite;
+            animation-delay: 1s;
+        }
+        @keyframes  updown{
+            0%{
+                transform: translateY(-5px);
+                opacity: 1;
+            }
+            50%{
+                transform: translateY(5px);
+                opacity: 1;
+            }
+            100%{
+                transform: translateY(-5px);
+                opacity: 1;
+            }
+        }
+        .titles{
+            width: 100%;
+            display: block;
+            position: relative;
+            margin-top: -3%;
+        }
+        .titles h1{
+            color: #fff;
+            font-size: 52px;
+            line-height: 10px;
+            animation: slidelefth1 1s linear forwards;
+            opacity: 0;
+            animation-delay: 0s;
+        }
+        @keyframes slidelefth1{
+            0%{
+                transform: translate(180px);
+                opacity: 0;
+            }
+            100%{
+                transform: translate(0px);
+                opacity: 1;
+            }
+        }
+        .titles p{
+            color: #f4e7e7;
+            width: 100%;
+            font-size: 17px;
+            animation: slideleftp 1s linear forwards;
+            opacity: 0;
+            animation-delay: 1s;
+            display: block;
+            position: relative;
+        }
+        @keyframes  slideleftp{
+            0%{
+                transform: translate(180px);
+                opacity: 0;
+            }
+            100%{
+                transform: translate(0px);
+                opacity: 1;
+            }
+        }
+        .titles button{
+            font-size: 15px;
+            border-style: none;
+            padding: 12px 23px;
+            border-radius: 30px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border: 2px solid #fff;
+            color: #fff;
+            background-color: #007f50;
+            animation: button 1s linear forwards;
+            opacity: 0;
+            animation-delay: 2s;
+            cursor: pointer;
+        }
+        .titles button:hover{
+            background-color: transparent;
+        }
+        @keyframes button {
+            0%{
+                transform: translate(180px);
+                opacity: 0;
+            }
+            100%{
+                transform: translate(0px);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo">
+                <img src="starbuks_logo.png" alt="">
+            </div>
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reward.html">Rewards</a></li>
+                
+                <li><a href="find-store.html">Find a store</a></li>
+            </ul>
+            <div class="links">
+                <a href="sign-in.html">Sign in</a>
+                <a href="join us page.html">Join now</a>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div>
+                <img src="image.png" alt="">
+            </div>
+
+            <div class="titles">
+                <h1>Find Your adventure</h1>
+                <p>Starbucks® Summer Game is here! Play for your chance to win—more than 10 million prizes are up for grabs!*</p>
+                <button ><a style="text-decoration: none; color: #ffffff;" href="ordernow.html">Order Now</a></button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
